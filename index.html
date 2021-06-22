@@ -57,5 +57,97 @@
         </p>
       </div>
     </section>
+
+    <!-- section 2 -->
+    <section class="section w3-light-grey w3-hover-opacity">
+      <div class="w3-container w3-center">
+        <i class="fa fa-cog fa-3x"></i>
+        <h2>Let's Begin</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam
+          ut nesciunt facilis adipisci at corporis?
+        </p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="w3-container">
+        <div class="w3-row-padding">
+          <div class="w3-col m5">
+            <img src="img/about.jpg" alt="" />
+          </div>
+          <div class="w3-col m7">
+            <button
+              onclick="accFunction('what')"
+              class="w3-button w3-block w3-left-align"
+            >
+              What We Do
+            </button>
+
+            <div id="what" class="w3-container w3-show">
+              <h3>We Do It All</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                sequi dicta aliquid, repellendus repudiandae voluptatibus,
+                voluptates recusandae iusto quaerat cumque sed dolores magni
+                dolore itaque ea quasi tempore fugit distinctio soluta quis
+                ipsum ipsa, at atque! Quia nesciunt voluptatem temporibus
+                blanditiis explicabo dolor cumque numquam, earum deleniti
+                repellendus, quasi tenetur!
+              </p>
+            </div>
+
+            <button
+              onclick="accFunction('who')"
+              class="w3-button w3-block w3-left-align"
+            >
+              What We Do
+            </button>
+
+            <div id="who" class="w3-container w3-hide">
+              <h3>We Are ACME Web Services</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                sequi dicta aliquid, repellendus repudiandae voluptatibus,
+                voluptates recusandae iusto quaerat cumque sed dolores magni
+                dolore itaque ea quasi tempore fugit distinctio soluta quis
+                ipsum ipsa, at atque!
+              </p>
+            </div>
+
+            <button
+              onclick="accFunction('where')"
+              class="w3-button w3-block w3-left-align"
+            >
+              Where We Are
+            </button>
+
+            <div id="where" class="w3-container w3-hide">
+              <h3>We Are Everywhere!</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                sequi dicta aliquid, repellendus repudiandae voluptatibus,
+                voluptates recusandae iusto quaerat cumque sed dolores magni
+                dolore itaque ea quasi tempore fugit distinctio soluta quis
+                ipsum ipsa, at atque!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- javascript -->
+    <script>
+      function accFunction(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
   </body>
 </html>
