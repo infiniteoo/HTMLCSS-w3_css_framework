@@ -48,7 +48,12 @@
           eaque illum mollitia autem provident reprehenderit labore sed deleniti
           ducimus facilis.
         </p>
-        <button class="w3-button w3-red w3-large w3-opacity">Start Here</button>
+        <button
+          class="w3-button w3-red w3-large w3-opacity"
+          onclick="document.getElementById('start-modal').style.display='block'"
+        >
+          Start Here
+        </button>
       </div>
     </section>
 
@@ -247,6 +252,56 @@
     <footer class="w3-black w3-padding-xlarge w3-center">
       <p>Acme Web Services &copy; 2021</p>
     </footer>
+
+    <!-- modal -->
+    <div id="start-modal" class="w3-modal">
+      <div class="w3-modal-content">
+        <header class="w3-container w3-red">
+          <span
+            onclick="document.getElementById('start-modal').style.display='none'"
+            class="w3-closebtn"
+            >&times;</span
+          >
+          <h2>Get Started</h2>
+        </header>
+
+        <div class="w3-container">
+          <form>
+            <div class="w3-section">
+              <label>Name</label>
+              <input
+                type="text"
+                placeholder="Enter Name"
+                class="w3-input w3-border w3-margin-bottom"
+              />
+              <label>Username</label>
+              <input
+                type="text"
+                placeholder="Enter Username"
+                class="w3-input w3-border w3-margin-bottom"
+              />
+              <label>Password</label>
+              <input
+                type="password"
+                placeholder="Enter Password"
+                class="w3-input w3-border w3-margin-bottom"
+              />
+
+              <label>Confirm Password</label>
+              <input
+                type="password"
+                placeholder="Confirm Password"
+                class="w3-input w3-border w3-margin-bottom"
+              />
+
+              <button class="w3-black w3-btn-block w3-section w3-padding">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <!-- javascript -->
     <script>
